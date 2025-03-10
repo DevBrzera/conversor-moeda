@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>$ Coin Trip</title>
+</head>
+<body>
+    <div class="container">
+        <span class="title">Converter Coin</span>
+            <form id="coin-form" method="post">
+                <div class="form-container">
+                <label for="value">Valor da moeda:</label>
+                <input type="number" name="value" id="value" placeholder="Digite o valor da moeda (R$): ">
+                <br>
+                <label for="coin">Moeda:</label>
+                <select name="coin" id="coin">
+                    <option value="USD">Dólar</option>
+                    <option value="EUR">Euro</option>
+                    <option value="BTC">Bitcoin</option>
+                </select>
+                <div class="result" style="display: none;">
+                    <span id="coin-value"></span>
+                    <span id="result"></span>
+                </div>
+                <br>
+                <button type="submit">Converter</button>
+            </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
